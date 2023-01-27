@@ -17,10 +17,10 @@
     <div class="wraper">
       <header class="header">
         <div class="header__container _container">
-          <a href="#" class="header__logo">
+          <a href="index.html" class="header__logo">
             <img src="./img/header/logo.png" alt="лого" />
           </a>
-          <a href="#" class="header__logo-mob">
+          <a href="index.html" class="header__logo-mob">
             <img src="./img/header/logo_mob.jpg" alt="лого" />
           </a>
           <div class="header__menu menu">
@@ -30,18 +30,24 @@
             <nav class="menu__body">
               <ul class="nemu__list">
                 <li class="nemu__item">
-                  <a class="nemu__link" href="#">Переваги</a>
+                  <a class="nemu__link" href="#benefits">Переваги</a>
                 </li>
                 <li class="nemu__item">
-                  <a class="nemu__link" href="#">Характеристики</a>
+                  <a class="nemu__link" href="#characteristic">Характеристики</a>
                 </li>
                 <li class="nemu__item">
-                  <a class="nemu__link" href="#">Комплектація</a>
+                  <a class="nemu__link" href="#complectation">Комплектація</a>
                 </li>
                 <li class="nemu__item">
-                  <a class="nemu__link" href="#">Контакти</a>
+                  <a class="nemu__link" href="#contact">Контакти</a>
+                </li>
+                <li class="nemu__item">
+                  <a href="#footer-form" class="menu__button-mob"
+                  >Замовити зараз</a
+                >
                 </li>
               </ul>
+
             </nav>
           </div>
           <div class="menu__contacts">
@@ -68,7 +74,7 @@
                   Starlink в наявності – <span>1000$</span> <br />
                   та під замовлення – <span>800$</span>
                 </p>
-                <a href="#" class="hero__button">Замовити зараз</a>
+                <a href="#footer-form" class="hero__button">Замовити зараз</a>
               </div>
               <div class="hero__img">
                 <img src="img/hero/img 1.jpg" alt="" />
@@ -76,7 +82,7 @@
             </div>
           </div>
         </section>
-        <section class="main__benefits benefits">
+        <section class="main__benefits benefits" id="benefits">
           <div class="benefits__container _container">
             <div class="benefits__block">
               <div class="benefits__content content__benefits">
@@ -143,7 +149,7 @@
                     alt="Характеристики та комплектація"
                   />
                 </div>
-                <a href="" class="benefits__characteristic-button"
+                <a href="#complectation" class="benefits__characteristic-button"
                   >Детальніше</a
                 >
               </div>
@@ -172,8 +178,8 @@
                     </div>
                     <div class="column__top-img ibg">
                       <!-- <img
-                      srcset="img/work/satellite-mob350.png 480w, img/work/satellite1200.jpg 1200w"
-                      sizes="(min-width: 1024px) 1200px, (min-width: 480px) 480px, 100vw"
+                      srcset="img/work/satellite-mob350.png 480w, img/work/satellite1200.jpg 768w"
+                      sizes="(min-width: 768px) 768px, (min-width: 480px) 480px, 100vw"
                         height="500px"
                         src="img/work/satellite-mob350.png"
                         alt="Мережа супутників"
@@ -228,7 +234,7 @@
             </div>
           </div>
         </section>
-        <section class="main__characteristic characteristic">
+        <section class="main__characteristic characteristic" id="characteristic">
           <div class="characteristic__container _container">
             <div class="characteristic__block">
               <h3 class="characteristic__title title__style">Характеристики</h3>
@@ -335,7 +341,7 @@
             </div>
           </div>
         </section>
-        <section class="main__complectation complectation">
+        <section class="main__complectation complectation" id="complectation">
           <div class="complectation__container _container">
             <div class="complectation__body">
               <h3 class="complectation__title title__style">Комплектація</h3>
@@ -379,7 +385,10 @@
                       <div class="column__complectation-box">
                         <h4 class="column__complectation-number">3</h4>
                         <div class="column__complectation-img ibg">
-                          <img src="img/complectation/router.jpg" alt="Роутер" />
+                          <img
+                            src="img/complectation/router.jpg"
+                            alt="Роутер"
+                          />
                         </div>
                       </div>
                     </div>
@@ -401,7 +410,6 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -449,9 +457,9 @@
                   Ми зв’яжемося з вами, щоб обговорити всі питання
                 </p>
               </div>
-              <form class="request__form" id="footer-form">
-                <label class="request__form-field">
-                  <div class="request__form-field-wrap">
+              <div class="request__form-wrap">
+                <form class="request__form" id="footer-form">
+                  <label class="request__form-field">
                     <input
                       class="request__form-input"
                       required
@@ -459,10 +467,8 @@
                       name="user-name"
                       type="text"
                     />
-                  </div>
-                </label>
-                <label class="request__form-field">
-                  <div class="request__form-field-wrap">
+                  </label>
+                  <label class="request__form-field">
                     <input
                       class="request__form-input"
                       required
@@ -470,18 +476,20 @@
                       name="user-pfone"
                       type="tel"
                     />
-                  </div>
-                </label>
+                  </label>
+                </form>
                 <button class="request__form-btn" type="submit">
                    Замовити зараз
                 </button>
-              </form>
+              </div>
             </div>
-            <div class="footer__contact contact">
+            <div class="footer__contact contact" id="contact">
               <ul class="contact__list">
                 <li class="contact__item">
                   <p class="contact__text">Зателефонувати нам</p>
-                  <a href="tel:380507779531" class="contact__title">+380 (50) 777 95 31</a>
+                  <a href="tel:380507779531" class="contact__title"
+                    >+380 (50) 777 95 31</a
+                  >
                 </li>
                 <li class="contact__item">
                   <p class="contact__text">Написати нам</p>
@@ -491,7 +499,12 @@
                 </li>
                 <li class="contact__item">
                   <p class="contact__text">Ми знаходимось</p>
-                  <a href="https://goo.gl/maps/wxywcYVwxd1jU5UH7" target="_blank" class="contact__title">м. Київ, пров. Московський, 2а</a>
+                  <a
+                    href="https://goo.gl/maps/wxywcYVwxd1jU5UH7"
+                    target="_blank"
+                    class="contact__title"
+                    >м. Київ, пров. Московський, 2а</a
+                  >
                 </li>
               </ul>
             </div>
