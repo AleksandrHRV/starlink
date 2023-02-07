@@ -30,24 +30,34 @@
             <nav class="menu__body">
               <ul class="nemu__list">
                 <li class="nemu__item">
-                  <a class="nemu__link" href="#benefits">Переваги</a>
+                  <a data-goto=".section_click1" class="menu__link" href="#"
+                    >Переваги</a
+                  >
                 </li>
                 <li class="nemu__item">
-                  <a class="nemu__link" href="#characteristic">Характеристики</a>
+                  <a data-goto=".section_click2" class="menu__link" href="#"
+                    >Характеристики</a
+                  >
                 </li>
                 <li class="nemu__item">
-                  <a class="nemu__link" href="#complectation">Комплектація</a>
+                  <a data-goto=".section_click3" class="menu__link" href="#"
+                    >Комплектація</a
+                  >
                 </li>
                 <li class="nemu__item">
-                  <a class="nemu__link" href="#contact">Контакти</a>
+                  <a data-goto=".section_click4" class="menu__link" href="#"
+                    >Контакти</a
+                  >
                 </li>
                 <li class="nemu__item">
-                  <a href="#footer-form" class="menu__button-mob"
-                  >Замовити зараз</a
-                >
+                  <a
+                    data-goto=".section_click5"
+                    href="#"
+                    class="menu__link menu__button-mob"
+                    >Замовити зараз</a
+                  >
                 </li>
               </ul>
-
             </nav>
           </div>
           <div class="menu__contacts">
@@ -57,11 +67,12 @@
               >+380 (50) 777 95 31</a
             >
           </div>
-          <div class="menu__contacts">
-            <a href="#footer-form" class="menu__contacts contact__button"
-              >Замовити зараз</a
-            >
-          </div>
+          <a
+            data-goto=".section_click5"
+            href="#"
+            class="menu__link menu__contacts contact__button"
+            >Замовити зараз</a
+          >
         </div>
       </header>
       <main class="main">
@@ -77,12 +88,12 @@
                 <a href="#footer-form" class="hero__button">Замовити зараз</a>
               </div>
               <div class="hero__img">
-                <img src="img/hero/img 1.jpg" alt="" />
+                <img src="img/hero/img1.jpg" alt="супутник" />
               </div>
             </div>
           </div>
         </section>
-        <section class="main__benefits benefits" id="benefits">
+        <section class="main__benefits benefits section_click1" id="benefits">
           <div class="benefits__container _container">
             <div class="benefits__block">
               <div class="benefits__content content__benefits">
@@ -143,13 +154,16 @@
                 </h4>
                 <div class="benefits__characteristic-img ibg">
                   <img
-                    width="386px"
-                    height="434px"
-                    src="img/benefits/img 2.jpg"
+                    width="386"
+                    height="434"
+                    src="img/benefits/img2.jpg"
                     alt="Характеристики та комплектація"
                   />
                 </div>
-                <a href="#complectation" class="benefits__characteristic-button"
+                <a
+                  data-goto=".section_click2"
+                  href="#"
+                  class="benefits__characteristic-button menu__link"
                   >Детальніше</a
                 >
               </div>
@@ -176,15 +190,7 @@
                         орбіті.
                       </p>
                     </div>
-                    <div class="column__top-img ibg">
-                      <!-- <img
-                      srcset="img/work/satellite-mob350.png 480w, img/work/satellite1200.jpg 768w"
-                      sizes="(min-width: 768px) 768px, (min-width: 480px) 480px, 100vw"
-                        height="500px"
-                        src="img/work/satellite-mob350.png"
-                        alt="Мережа супутників"
-                      /> -->
-                    </div>
+                    <div class="column__top-img ibg"></div>
                   </div>
                 </div>
                 <div class="work__colomn-row">
@@ -199,7 +205,7 @@
                       </div>
                       <div class="work__column-img ibg">
                         <img
-                          height="270px"
+                          height="270"
                           src="img/work/terminal.png"
                           alt="Клієнтський термінал"
                         />
@@ -222,7 +228,7 @@
                       </div>
                       <div class="work__column-img ibg">
                         <img
-                          height="270px"
+                          height="270"
                           src="img/work/station.png"
                           alt="Мережа базових станцій"
                         />
@@ -234,7 +240,10 @@
             </div>
           </div>
         </section>
-        <section class="main__characteristic characteristic" id="characteristic">
+        <section
+          class="main__characteristic characteristic section_click2"
+          id="characteristic"
+        >
           <div class="characteristic__container _container">
             <div class="characteristic__block">
               <h3 class="characteristic__title title__style">Характеристики</h3>
@@ -246,47 +255,47 @@
                     Супутникова антена
                   </h4>
                   <ul class="characteristic__content-list">
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Розміри</p>
                         <span>50х30 см</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Вага (з кабелем)</p>
                         <span>4,2 кг</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Висота</p>
                         <span>61 см</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Діаметр щогли</p>
                         <span>3,4 см</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Робоча температура</p>
                         <span>від -30 ° C до +50 ° C</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Ступінь захисту</p>
                         <span>IP54</span>
-                      </li>
-                    </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
                 <div class="characteristic__top-img ibg">
                   <img
-                    height="590px"
+                    height="590"
                     src="img/characteristic/antenna.jpg"
                     alt="супутникова антена"
                   />
@@ -298,41 +307,41 @@
                 >
                   <h4 class="characteristic__content-title">Роутер</h4>
                   <ul class="characteristic__content-list">
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Стандарти</p>
                         <span>IEEE 802.11a/b/g/n/ac</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Подвійний діапазон</p>
                         <span>2,4 ГГц та 5 ГГц</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Безпека</p>
                         <span>WPA2 та WPA3</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Робоча температура</p>
                         <span>від -30 ° C до +50 ° C</span>
-                      </li>
-                    </div>
-                    <div class="characteristic__content-wrap">
-                      <li class="characteristic__content-item">
+                      </div>
+                    </li>
+                    <li class="characteristic__content-wrap">
+                      <div class="characteristic__content-item">
                         <p>Ступінь захисту</p>
                         <span>IP54</span>
-                      </li>
-                    </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
                 <div class="characteristic__top-img ibg">
                   <img
-                    height="590px"
+                    height="590"
                     src="img/characteristic/router.jpg"
                     alt="роутер"
                   />
@@ -341,7 +350,10 @@
             </div>
           </div>
         </section>
-        <section class="main__complectation complectation" id="complectation">
+        <section
+          class="main__complectation complectation section_click3"
+          id="complectation"
+        >
           <div class="complectation__container _container">
             <div class="complectation__body">
               <h3 class="complectation__title title__style">Комплектація</h3>
@@ -447,10 +459,10 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer section_click4">
         <div class="footer__container _container">
           <div class="footer__body">
-            <div class="footer__request request">
+            <div class="footer__request request section_click5">
               <div class="request__content">
                 <h4 class="request__title title__style">Залиште заявку</h4>
                 <p class="request__text">
@@ -473,14 +485,16 @@
                       class="request__form-input"
                       required
                       placeholder="Ваш телефон"
+                      minlength="9"
+                      maxlength="15"
                       name="user-pfone"
                       type="tel"
                     />
                   </label>
+                  <button class="request__form-btn" type="submit">
+                     Замовити зараз
+                  </button>
                 </form>
-                <button class="request__form-btn" type="submit">
-                   Замовити зараз
-                </button>
               </div>
             </div>
             <div class="footer__contact contact" id="contact">
