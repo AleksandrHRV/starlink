@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".slider").slick({
     responsive: [
       {
-        breakpoint: 2048,
+        breakpoint: 4048,
         settings: "unslick",
       },
       {
@@ -32,7 +32,6 @@ if (iconMenu) {
     document.body.classList.toggle("lock");
     iconMenu.classList.toggle("active");
     menuBody.classList.toggle("active");
-    console.log(iconMenu);
   });
 }
 

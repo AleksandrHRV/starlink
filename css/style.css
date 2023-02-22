@@ -764,7 +764,9 @@ body.lock {
   flex-direction: column;
   width: 100%;
 }
-
+.request__form > *:not(:last-child){
+  margin-bottom: 20px;
+}
 .request__form-field {
 }
 .request__form-field-wrap {
